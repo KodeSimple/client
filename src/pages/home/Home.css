@@ -1,5 +1,10 @@
-.home-page-background{background-color: #d1e6dd !important};
-.homeField{background-color: #14241d};
+.home-page-background{
+  background-color: #d1e6dd !important;
+ };
+
+.homeField{
+  background-color: #14241d
+};
 
 /* ------Body Media query starts here---------*/
 @media (max-width: 375px) {
