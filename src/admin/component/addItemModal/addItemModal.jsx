@@ -12,11 +12,7 @@ function AddItemModal() {
 
   return (
     <>
-<<<<<<< HEAD
-      <Button className="AddItemButton" variant="primary"  onClick={handleShow}>
-=======
       <Button className="AddItemButton" onClick={handleShow}>
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
         Add item
       </Button>
 

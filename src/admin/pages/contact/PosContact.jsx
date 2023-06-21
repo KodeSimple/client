@@ -4,14 +4,6 @@ import PosFooter from '../../component/footer/PosFooter'
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setLoggedInUser } from '../../component/userReducer';
-<<<<<<< HEAD
-
-function PosContact() {
-                  // 24 hour login duration code
-                  const loggedInUser = useSelector(state => state.loggedInUser);
-                  const dispatch = useDispatch();
-                  const navigate = useNavigate();
-=======
 import '../contact/PosContact.css';
 import ContactForm from '../../component/contactForm/contactForm'
 
@@ -21,7 +13,6 @@ function PosContact() {
                   const dispatch = useDispatch();
                   const navigate = useNavigate();
                   console.log(loggedInUser);
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
               //////////////////////redux log in time durtion code starts here/////////////////////////  
                   useEffect(() => {
                     const storedUser = localStorage.getItem('loggedInUser');
@@ -37,22 +28,11 @@ function PosContact() {
                   }, [dispatch, navigate]);
                //////////////////////redux log in time durtion code ends here///////////////////////// 
 
-<<<<<<< HEAD
-=======
-          
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
               
   return (
     <>
          <div>
              <div><PosNavBarComp /></div> 
-<<<<<<< HEAD
-                  <main>
-                      <div className="text-center">
-                           <h1>Contact here</h1>
-                           <h2>{loggedInUser}</h2>
-                       </div>
-=======
                   <main className="posConatactMain">
                            <div className="w-100 d-flex justify-content-center pt-5">
                             <div className="w-50 d-flex justify-content-center pos-contact-container">    
@@ -62,7 +42,6 @@ function PosContact() {
                             </div>
                         </div>
                       
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                   </main>
              <div><PosFooter /></div>
          </div>

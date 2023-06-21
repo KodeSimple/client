@@ -5,10 +5,7 @@ import growthArrow from '../../components/resources/hand-holding-growth-arrow-wi
 import responsive from '../../components/resources/responsive.png'
 import Footer from '../../components/footer/Footer';
 import NavBarComp from '../../components/header/NavBarComp';
-<<<<<<< HEAD
-=======
 import '../features/Features.css';
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
 
 function Features() {
   return (
@@ -18,11 +15,7 @@ function Features() {
           {/* header section  starts here */}
                <NavBarComp />
           {/* header section ends here */}
-<<<<<<< HEAD
-         <div>
-=======
           <div className="featuresPagebackGroundColor"> 
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
            {/* features content starts here */}
            <section className="features bg-success-subtle">  {/* <!-- starts of features section here*/}
                                    <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">

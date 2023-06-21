@@ -1,11 +1,5 @@
 import React from 'react'
 import '../../../admin/component/footer/PosFooter.css'
-<<<<<<< HEAD
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import { Link } from 'react-router-dom';
-=======
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
 import { Button } from 'react-bootstrap';
 import facebookLogo from '../../resources/icons8-facebook-64.png';
 import gmailLogo from '../../resources/Gmail_icon_(2020).svg.webp';
@@ -26,15 +20,9 @@ function Footer() {
                     <div class="p-0 d-flex d-block flex-row flex-row">
                                  <div class="p-2">
                                           <Button
-<<<<<<< HEAD
-                                                variant="outline-primary"
-                                                className="m-2 footerButton"
-                                                href="https://www.facebook.com/profile.php?id=100092405686394/"
-=======
                                                 // variant="outline-primary"
                                                 className="m-2 footerButton"
                                                 href="https://www.facebook.com/profile.php?id=100092405686394"
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                                                 target="_blank"
                                                 role="button"
                                                  >
@@ -43,11 +31,7 @@ function Footer() {
                                  </div>
                                  <div class="p-2 ">  
                                           <Button
-<<<<<<< HEAD
-                                                variant="outline-primary"
-=======
                                                 // variant="outline-primary"
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                                                 className="m-2 footerButton"
                                                 href="mailto:kodesimple57@gmail.com"
                                                 target="_blank"
@@ -58,15 +42,9 @@ function Footer() {
                                  </div>
                                  <div class="p-2 ">
                                            <Button
-<<<<<<< HEAD
-                                                variant="outline-primary"
-                                                className="m-2 footerButton"
-                                                href="mailto:kodesimple57@gmail.com"
-=======
                                                 // variant="outline-primary"
                                                 className="m-2 footerButton"
                                                 href="https://www.messenger.com/t/117956294624198/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0"
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                                                 target="_blank"
                                                 role="button"
                                               >

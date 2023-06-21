@@ -3,10 +3,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import apiService from '../../../api-service/apiService';
 import Table from 'react-bootstrap/Table';
-<<<<<<< HEAD
-=======
 import Pagination from 'react-bootstrap/Pagination';
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
 import '../inventoryTable/inventoryTable.css';
 
 function CurrentProductTable() {
@@ -21,15 +18,10 @@ function CurrentProductTable() {
     'Sell Price',
     // 'Profit',
   ];
-<<<<<<< HEAD
-
-  const [userProducts, setUserProducts] = useState([]);
-=======
   const itemsPerPage = 20;
 
   const [userProducts, setUserProducts] = useState([]);
   const [activePage, setActivePage] = useState(1);
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
   const loggedInUser = useSelector((state) => state.loggedInUser);
   const navigate = useNavigate();
   console.log(navigate);
@@ -39,11 +31,7 @@ function CurrentProductTable() {
       try {
         const storedUser = localStorage.getItem('loggedInUser');
 
-<<<<<<< HEAD
-        // Send request to server to fetch user product list
-=======
         //////// Send request to server to fetch user product list
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
         const response = await apiService.post('users/current-product', {
           userName: storedUser,
         });
@@ -61,15 +49,6 @@ function CurrentProductTable() {
     };
 
     fetchData();
-<<<<<<< HEAD
-  }, []);
-
-  return (
-    <>
-      <div>
-      <h1 className="text-center my-4">Current Available Products</h1>
-        <Table responsive="sm" striped>
-=======
 
     const intervalId = setInterval(fetchData, 5000); ////// Refresh every 5 seconds
 
@@ -119,7 +98,6 @@ function CurrentProductTable() {
         </Pagination>
 
         <Table responsive="sm" striped bordered hover>
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
           <thead>
             <tr>
               <th>#</th>
@@ -136,15 +114,9 @@ function CurrentProductTable() {
                 </td>
               </tr>
             )}
-<<<<<<< HEAD
-            {userProducts.map((data, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-=======
             {getPageItems().map((data, index) => (
               <tr key={index}>
                 <td>{(activePage - 1) * itemsPerPage + index + 1}</td>
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                 <td className="hidden-cell">{data.userId}</td>
                 {/* <td>{data.entryDate}</td> */}
                 <td>{data.serialNo}</td>
@@ -165,8 +137,6 @@ function CurrentProductTable() {
 
 export default CurrentProductTable;
 
-<<<<<<< HEAD
-=======
 
 
 // import React, { useState, useEffect } from 'react';
@@ -270,4 +240,3 @@ export default CurrentProductTable;
 
 
 
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca

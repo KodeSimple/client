@@ -8,20 +8,13 @@ import { useNavigate } from 'react-router-dom';
 import { setLoggedInUser } from '../../component/userReducer';
 import AddItemModal from '../../component/addItemModal/addItemModal';
 import CurrentProductTable from '../../component/currentProductTable/currentProductTable';
-<<<<<<< HEAD
-=======
 import '../inventory/PosInventory.css';
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
 
 function PosInventory() {
   const loggedInUser = useSelector((state) => state.loggedInUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
-<<<<<<< HEAD
-  const [showInventoryTable, setShowInventoryTable] = useState(true); // State to control which table to show
-=======
   const [showInventoryTable, setShowInventoryTable] = useState(true); ////// State to control which table to show
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
   console.log(loggedInUser);
 
 
@@ -48,28 +41,6 @@ function PosInventory() {
         <div>
           <PosNavBarComp />
         </div>
-<<<<<<< HEAD
-        <main>
-          <section>
-               <div className="d-flex d-block flex-column-sm self-align-content-center pt-3 flex-wrap container-fluid justify-content-start w-50">
-                       <div className="mb-2 w-25 align-content-center">
-                              <AddItemModal />
-                       </div>
-                      <div className="mb-2 w-25 align-content-center">
-                          <button className="showHideTableButton" onClick={handleToggleTable}>
-                                {showInventoryTable ? 'Available Products' : 'Inventory History'}
-                          </button>
-                      </div>
-               </div>
-               <div className="table-container flex-col container-fluid d-flex justify-content-center w-100">
-                        {showInventoryTable && <InventoryTable />}
-               </div>
-               {/* <h1 className="text-center my-4">Current Inventory</h1> */}
-                <div className="table-container flex-col container-fluid d-flex justify-content-center w-100">
-                       {!showInventoryTable && <CurrentProductTable />}
-                </div>
-          </section>
-=======
         <main className="posInventoryMain">
        
                <div className="d-flex d-inline-block justify-content-start pt-3 w-100 posInventoryButton">
@@ -92,7 +63,6 @@ function PosInventory() {
                             {!showInventoryTable && <InventoryTable />}
                 </div>
         
->>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
         </main>
         <div>
           <PosFooter />
