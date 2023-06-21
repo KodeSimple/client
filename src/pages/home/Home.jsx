@@ -31,7 +31,7 @@ function Home() {
                    </div>      
             </div>
                            {/* home page body content starts here */}
-        <div className="homePageColor">         
+        <div className="home-Bgcolor">         
             <img src={mainPageBanner} alt="POS brochure" className="index-brochure w-100" fluid />
               {/* POS banner ends herelogo */}
 
