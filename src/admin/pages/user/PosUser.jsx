@@ -4,6 +4,11 @@ import PosFooter from '../../component/footer/PosFooter'
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setLoggedInUser } from '../../component/userReducer';
+<<<<<<< HEAD
+=======
+import '../user/PosUser.css';
+import UserInfo from '../../component/usersInfo/usersInfo';
+>>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
 
 function PosUser() {   
             //////////////////////redux/reducer log in and time durtion code starts here///////////////////////// 
@@ -30,6 +35,7 @@ function PosUser() {
        <>
           <div>
               <div><PosNavBarComp /></div> 
+<<<<<<< HEAD
                    <main>
                         {/* main body header starts here */}
                         <div className="p-0 d-flex justify-content-center flex-column">
@@ -64,6 +70,10 @@ function PosUser() {
                        </section>
 
                         {/* user table list ends here */}
+=======
+                   <main className="posUserMain">
+                      <div><UserInfo /></div>
+>>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
                    </main>
               <div><PosFooter /></div>
           </div>

@@ -10,7 +10,7 @@ import './App.css';
       return(
             <>
                <div>  
-                   <main>
+                   <main className="globalStyling">
                       <div><AppRoutes /></div> 
                    </main>
                </div>

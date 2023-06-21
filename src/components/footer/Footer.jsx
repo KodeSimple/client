@@ -4,8 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import facebookLogo from '../resources/fb-icon.png';
-import gmailLogo from '../resources/gmail-com.webp';
+import facebookLogo from '../resources/icons8-facebook-64.png';
+import gmailLogo from '../resources/Gmail_icon_(2020).svg.webp';
 import messengerLogo from '../resources/messenger-logo-removebg-preview.png';
 
 function Footer() {
@@ -68,7 +68,7 @@ function Footer() {
                                               <Button
                                                     variant="outline-primary"
                                                     className="m-2 footerButton"
-                                                    href="https://www.facebook.com/profile.php?id=100092405686394/"
+                                                    href="https://www.facebook.com/profile.php?id=100092405686394"
                                                     target="_blank"
                                                     role="button"
                                                      >
@@ -87,15 +87,15 @@ function Footer() {
                                               </Button>
                                      </div>
                                      <div class="p-2 ">
-                                               <Button
-                                                    variant="outline-primary"
-                                                    className="m-2 footerButton"
-                                                    href="mailto:kodesimple57@gmail.com"
-                                                    target="_blank"
-                                                    role="button"
-                                                  >
-                                                  <img src={messengerLogo} height="20px" alt="logo" fluid />
-                                              </Button>
+                                     <Button
+                                                // variant="outline-primary"
+                                                className="m-2 footerButton"
+                                                href="https://www.messenger.com/t/117956294624198/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0"
+                                                target="_blank"
+                                                role="button"
+                                              >
+                                              <img src={messengerLogo} height="20px" alt="logo" fluid />
+                                          </Button>
                                    </div>
                                  </div>
                                </div>  {/* <!--------flex item 3 end tag-------------> */}

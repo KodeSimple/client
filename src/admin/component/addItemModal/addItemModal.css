@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .AddItemButton{
     /* max-width: 10px; */
     display:flex;
@@ -27,12 +28,49 @@
        .AddItemButton:hover{
         background-color: #036384;
         border: 2px solid #036384;
+=======
+    .AddItemButton{
+        /* max-width: 10px; */
+        background-color: #e9f3f1;
+        border-color: transparent;
+        border-radius: 10px;
+        color: rgb(17, 23, 26);
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 180px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 
+          'Trebuchet MS',         
+     }
+    
+       .AddItemButton:hover{
+        background-color: #036384 !important;
+        border-color: transparent;
+      }
+
+      .AddItemButton:active{
+        background-color: #036384 !important;
+        border-color: transparent;
+        transform: translateY(4px) !important;
+>>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
       }
 
       .modalBody{
         background-color: #97bebe;
+<<<<<<< HEAD
+=======
+        font-family: 'Trebuchet MS';
+>>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
       }
 
       .modalHeader{
         background-color: #97bebe;
+<<<<<<< HEAD
+=======
+        font-family: 'Trebuchet MS';
+>>>>>>> 355c98f35760ff38ea57e6cbee3e49ec99aba5ca
       }

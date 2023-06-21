@@ -13,20 +13,18 @@
     font-weight: bold;
     font-size: 16px;
     font-family: 
-      'Trebuchet MS',
-       /* 'Lucida Sans Unicode', 
-       'Lucida Grande', 
-       'Lucida Sans',
-        Arial,
-         sans-serif; */
-         
+      'Trebuchet MS';      
      }
-  
-  
   
   .offCanvasButton:hover {
     background-color: #036384;
     border: 2px solid #036384;
+    }
+
+  .offCanvasButton:active {
+    background-color: #036384 !important;
+    border:none !important;
+    transform: translateY(10px) !important;
     }
 
  .offCanvasBody {

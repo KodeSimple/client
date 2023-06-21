@@ -22,7 +22,7 @@ function UsersValidation() {
     event.preventDefault();
     const { userName, password } = event.target.elements;
     setLoading(true);
-    setError({}); // Clear existing errors
+    setError({}); ////// Clear existing errors
 
     apiService
       .post('/users/login', { userName: userName.value, password: password.value })
@@ -35,7 +35,7 @@ function UsersValidation() {
           const expirationTime = new Date().getTime() + 24 * 60 * 60 * 1000;
           localStorage.setItem('loggedInUser', resUser);
           localStorage.setItem('loggedInUserExpiration', expirationTime);
-          navigate('/online-pos'); // Navigate to next page
+          navigate('/online-pos'); ////// Navigate to next page
         } else {
           setError({
             user: errorMessages.user,
@@ -63,7 +63,7 @@ function UsersValidation() {
 
   useEffect(() => {
     if (isSubmitted) {
-      navigate('/online-pos'); // Navigate to next page
+      navigate('/online-pos'); //// Navigate to next page
     }
   }, [isSubmitted, navigate]);
 
