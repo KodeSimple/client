@@ -12,11 +12,8 @@ function Footer() {
   return ( 
      <>  
      <footer>   
-        <div className="page-footer justify-content-center d-flex container-fluid w-100"> 
+        <div className="public-page-footer justify-content-center d-flex container-fluid w-100"> 
            <p>
-                {/* //////////////insert footer from mp2 here///////////////////////////// */}
-
-                         {/* modification here */}
                          <footer class="footerBgColor container-fluid mb-0 ">
                                {/* <!-----footer container set 1 starts here------> */}
                                <div class="d-flex flex-row mb-0 footerNavMobileRes w-100 justify-content-center">
@@ -51,9 +48,7 @@ function Footer() {
                                    </Navbar> 
                                  </div>
                                </div>
-                               {/* <!-----footer container set 1 ends here---------> */}
-                               {/* <!-----footer container set 2 starts here--------> */}
-                         
+                          
                                <div class="d-flex d-block w-100 align-self-center">  {/* <!------flex main container start tag-------> */}
                                  <div class=" d-flex container-fluid p-0 flex-wrap justify-content-around align-self-center w-75">
                                    {/* <!--------flex item 2 start tag-------------> */}

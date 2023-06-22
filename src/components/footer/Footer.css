@@ -1,5 +1,7 @@
 
-.page-footer{background-color: #036384;}
+.public-page-footer{
+   background-color: #036384 !important
+  }
 
 /*  Footer mobile responsive section starts here */
 @media (max-width: 400px) and (min-width: 300px) {  
