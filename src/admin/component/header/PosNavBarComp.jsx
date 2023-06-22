@@ -10,7 +10,7 @@ import '../header/PosNavBarComp.css';
 function PosNavBarComp() {
   return (
     <>
-              <div className="navBarContainer d-flex justify-content-around flex-wrap container-fluid ">
+              <div className="navBarColor d-flex justify-content-around flex-wrap container-fluid ">
                         <div className="d-flex">
                             <Container fluid>
                                <Navbar className="custom-navbar ml-auto " expand="lg">
