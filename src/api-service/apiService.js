@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiService = axios.create({ 
-    baseURL: 'https://vercel-server-nu.vercel.app/',   ////'https://server-alpha-blue.vercel.app',       
+    baseURL: 'https://vercel-server-nu.vercel.app',   ////'https://server-alpha-blue.vercel.app',       
 });
 
 export default apiService;
