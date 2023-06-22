@@ -44,3 +44,22 @@
 .home-Bgcolor{
   background-color: #d1e6dd !important;
   }
+
+  .brandLogo{
+    height:80px;
+  } 
+  
+  
+  @media (max-width: 500px)  {
+    .brandLogo {
+      height:50px;
+      
+    }
+  }
+  
+  @media (max-width: 500px) and (min-width: 376px) {
+    .brandLogo {
+      height:50px;
+      
+    }
+  }
