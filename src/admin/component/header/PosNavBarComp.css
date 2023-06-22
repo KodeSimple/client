@@ -33,18 +33,17 @@
 .nav-link:active{
   opacity: 0.5;
  }
+ .nav-link:hover {
+  text-decoration: none !important;
+}*/
 
 .navBarContainer{
     background-color: #036384;
     }
 
-.nav-link:hover {
-  text-decoration: none !important;
-}
-
 .brandLogo{
   height:80px;
-} */
+} 
 
 
 @media (max-width: 500px)  {
@@ -54,10 +53,10 @@
   }
 }
 
-/* @media (max-width: 500px) and (min-width: 376px) {
+@media (max-width: 500px) and (min-width: 376px) {
   .brandLogo {
     height:50px;
     
   }
-} */
+}
 
