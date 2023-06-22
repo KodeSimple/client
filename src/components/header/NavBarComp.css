@@ -15,7 +15,6 @@
         margin-top:10px;
         margin-bottom: 10px;
         margin-right: 11vh;
-        /* margin-right: 50px; */
         }
 
 .nav-link::after {
@@ -38,9 +37,9 @@
     background-color: #036384;
     }
 
-.nav-link:hover {
+/* .nav-link:hover {
   text-decoration: none !important;
-}
+} */
 
 .home-Bgcolor{
   background-color: #d1e6dd !important;

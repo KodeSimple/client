@@ -1,4 +1,4 @@
-
+/* 
 .nav-link {
   font-size:larger;
   position: relative;
@@ -16,7 +16,6 @@
         margin-top:10px;
         margin-bottom: 10px;
         margin-right: 11vh;
-        /* margin-right: 50px; */
         }
 
 .nav-link::after {
@@ -45,10 +44,8 @@
 
 .brandLogo{
   height:80px;
-}
+} */
 
-.navBar{
-}
 
 @media (max-width: 500px)  {
   .brandLogo {
