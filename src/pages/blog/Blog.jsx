@@ -6,6 +6,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 // import Button from 'react-bootstrap/Button';
 import Mobilepos from '../content/mobilepos';
 import mobilePos from '../../components/resources/mobile-pos.png';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 function Blog() {
@@ -17,7 +19,7 @@ function Blog() {
           {/* header section ends here */}
       <main>
          <div>
-              <secction class="blog">
+              <section class="blog">
                     <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
                         <div class="pt-5 w-50 bg-body">
                          <h1>Blog</h1>
@@ -35,9 +37,13 @@ function Blog() {
                                         Given the fast-paced environment we live in today, where smartphones have become an essential part of our everyday lives, it is not unexpected that businesses are using mobile technology to expedite their procedures.
                                         </Card.Text>
                                         </Card.Body>
+                                        <Navbar>
+                                        <Nav>
                                         <div className="p-0 d-flex justify-content-center">
                                            <a className="hrefLink" href="/mobile-pos" onClick={Mobilepos}>Learn more</a>
                                         </div>
+                                        </Nav>
+                                        </Navbar>
                                         </Card>
 
                                         <Card>
@@ -62,7 +68,7 @@ function Blog() {
                               {/* blogs contents ends here */}
                         </div>
                     </div>
-             </secction>
+             </section>
           </div>
      </main>
           {/* footer section starts here */}
