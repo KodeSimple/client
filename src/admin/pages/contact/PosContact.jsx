@@ -35,7 +35,7 @@ function PosContact() {
              <div><PosNavBarComp /></div> 
                   <main className="posConatactMain">
                            <div className="w-100 d-flex justify-content-center pt-5">
-                            <div className="w-50 d-flex justify-content-center pos-contact-container">    
+                            <div className="w-50 responsive-body d-flex justify-content-center pos-contact-container">    
                                 <div className="w-75 pt-4 pb-5">
                                       <ContactForm />
                                </div>
