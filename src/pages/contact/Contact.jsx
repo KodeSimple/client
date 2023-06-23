@@ -22,15 +22,6 @@ function Contact() {
     event.preventDefault();
     setLoading(true);
 
-    // const emailData = {
-    //   To_email: 'kodesimple57@gmail.com',
-    //   email_contact: event.target.email.value,
-    //   client_phone: event.target.contactNumber.value,
-    //   email_subject: event.target.subject.value,
-    //   from_name: event.target.fullName.value,
-    //   concern_message: event.target.concernMessage.value
-    // };
-
     const emailData = {
       To_email: 'cardonakie@gmail.com',
       // email_contact: event.target.emailPublic.value,
@@ -156,13 +147,13 @@ function Contact() {
               <Col sm={6}>
                 <Form.Group controlId="firstName">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control name="firstName" type="text" placeholder="Enter first name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control required name="firstName" type="text" placeholder="" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
               <Col sm={6}>
                 <Form.Group controlId="lastName">
                   <Form.Label>Last Name</Form.Label>
-                  <Form.Control name="lastName" type="text" placeholder="Enter last name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control required name="lastName" type="text" placeholder="" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
             </Row>
@@ -171,14 +162,14 @@ function Contact() {
             <Col sm={6}>
             <Form.Group controlId="emailPublic">
               <Form.Label>Email</Form.Label>
-              <Form.Control name="emailPublic" type="email" placeholder="Enter email" style={{ marginBottom: '10px' }}/>
+              <Form.Control required name="emailPublic" type="email" placeholder="" style={{ marginBottom: '10px' }}/>
             </Form.Group>
             </Col>
 
             <Col sm={6}>
             <Form.Group controlId="phonePublic">
               <Form.Label>Phone</Form.Label>
-              <Form.Control name="phonePublic" type="text" placeholder="Enter phone number" style={{ marginBottom: '10px' }}/>
+              <Form.Control required name="phonePublic" type="text" placeholder="" style={{ marginBottom: '10px' }}/>
             </Form.Group>
             </Col>
             </Row>
@@ -187,14 +178,14 @@ function Contact() {
               <Col sm={6}>
                 <Form.Group controlId="companyPublic">
                   <Form.Label>Company Name</Form.Label>
-                  <Form.Control name="companyPublic" type="text" placeholder="Enter company name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control required name="companyPublic" type="text" placeholder="" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
              </Col>
 
               <Col sm={6}>
                 <Form.Group controlId="industryPublic">
                   <Form.Label>Industry</Form.Label>
-                  <Form.Control name="industryPublic" ype="text" placeholder="Enter industry" style={{ marginBottom: '10px' }}/>
+                  <Form.Control required name="industryPublic" ype="text" placeholder="" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
             </Row>
@@ -203,14 +194,14 @@ function Contact() {
               <Col sm={6}>
                 <Form.Group controlId="revenuePublic">
                   <Form.Label>Annual Revenue</Form.Label>
-                  <Form.Control name="revenuePublic" type="text" placeholder="Select Revenue" style={{ marginBottom: '10px' }}/>
+                  <Form.Control required name="revenuePublic" type="text" placeholder="" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
 
               <Col sm={6}>
                 <Form.Group controlId="countryPublic">
                   <Form.Label>Country</Form.Label>
-                  <Form.Control name="countryPublic" type="text" placeholder="Enter country" style={{ marginBottom: '25px' }}/>
+                  <Form.Control required name="countryPublic" type="text" placeholder="" style={{ marginBottom: '25px' }}/>
                 </Form.Group>
               </Col>
             </Row>
@@ -225,7 +216,7 @@ function Contact() {
 
             <Form.Group controlId="formMessage">
                   <Form.Label>Message</Form.Label>
-                  <Form.Control as="textarea" rows={3} placeholder="Enter your message" style={{ marginBottom: '10px' }}/>
+                  <Form.Control as="textarea" rows={3} placeholder="" style={{ marginBottom: '10px' }}/>
             </Form.Group>
 
             {/* <Button className="button-form" variant="primary" type="submit">
