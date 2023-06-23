@@ -63,3 +63,9 @@
       
     }
   }
+
+@media (max-width: 412px) {
+  .brand-logo{
+    height: 60px;
+  }
+}

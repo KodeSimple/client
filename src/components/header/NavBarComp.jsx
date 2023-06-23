@@ -13,8 +13,8 @@ function NavBarComp() {
         {/* <Container fluid>    */}
                <div className="navBarColor d-flex container-fluid justify-content-center ">
                  <Navbar className="custom-navbar ml-auto " expand="lg">
-                   <Navbar.Brand className="brandLogo ml-auto" href="features">
-                     <img src={brandLogo} height="70vh" alt="logo" fluid />
+                   <Navbar.Brand className="navBarBrand ml-auto" href="features">
+                     <img className="brand-logo" src={brandLogo} height="70vh" alt="logo" fluid />
                    </Navbar.Brand>
                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                    <Navbar.Collapse id="basic-navbar-nav">
