@@ -55,7 +55,7 @@ function SaleReceipt({ paymentSuccessful }) {
                 <thead>
                   <tr>
                     <th>Serial No</th>
-                    <th>Category</th>
+                    {/* <th>Category</th> */}
                     <th>Item Description</th>
                     <th>Qty</th>
                     <th>Sell Price</th>
@@ -66,7 +66,7 @@ function SaleReceipt({ paymentSuccessful }) {
                   {salesReceiptData.salesList[0].items.map((item, index) => (
                     <tr key={index}>
                       <td>{item.serialNo}</td>
-                      <td>{item.category}</td>
+                      {/* <td>{item.category}</td> */}
                       <td>{item.itemDescription}</td>
                       <td>{item.qty}</td>
                       <td>{parseFloat(item.sellPrice).toFixed(2)}</td>
