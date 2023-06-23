@@ -38,7 +38,7 @@ function Home() {
 
                          {/* Features section starts here */}
                 <section className="features bg-success-subtle">  {/* <!-- starts of features section here*/}
-                          <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
+                          <div class="d-flex flex-row justify-content-center pt-5 container-fluid">
                                  <div class=" w-75">
                                   <h1 class="text-center pt-5">KodeSimple Features</h1>
                                   <hr class="bs-secondary-color border-2 opacity-50" />
@@ -187,14 +187,22 @@ function Home() {
                           <img src={pricing} alt="POS brochure" className="index-brochure w-100" fluid />
                    </section> */}
                         <section id="pricing" className="bg-info-subtle">
-                          <div className="pricing-container">
-                            <img src={pricing} alt="POS brochure" className="index-brochure" />
-                            <div className="pricing-text">
-                              <h2>Our Pricing Plans</h2>
-                              <p>
-                                KodeSimple mobile POS is a cutting-edge point-of-sale (POS) system designed for small and medium-sized businesses. It provides a convenient and efficient way for merchants to manage their sales and transactions using their mobile devices.</p>
-                            </div>
-                          </div>
+                          <div className="pricing-container ">
+                                <img src={pricing} alt="POS brochure" className="index-brochure" />
+                                  
+                              <div className="pricing-text">
+                                  <div className="text-center pt-3">
+                                     <h2 >Our Pricing Plans</h2>
+                                  </div>
+                                     <div className='text-left d-flex justify-content-center pt-2'>
+                                       <div className="">
+                                           <p>
+                                           <span className='paragraph-start'>KodeSimple</span> mobile POS is a cutting-edge point-of-sale (POS) system designed for small and medium-sized businesses. It provides a convenient and efficient way for merchants to manage their sales and transactions using their mobile devices.
+                                           </p>
+                                      </div>
+                                   </div>
+                             </div>
+                          </div> 
                         </section>
              </div> {/* background end tag */}
                    {/* <!-- End of pricing section here --> */}

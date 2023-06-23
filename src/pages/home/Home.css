@@ -11,13 +11,13 @@
 };
 
 /* ------Body Media query starts here---------*/
-@media (max-width: 375px) {
+@media (max-width: 373px) {
     .features-responses {
-        flex-direction: column !important;
+        flex-direction: row !important;
     }
   }
   
-  @media (max-width: 500px) and (min-width: 376px) {
+  @media (max-width: 500px) and (min-width: 374px) {
     .features-responses {
       flex-direction: column !important;
       
@@ -111,8 +111,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-image: inherit;
+  width: 75%;
+  text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+@media (max-width: 545px) {
+  .pricing-text {
+      display: none;
+  }
 }

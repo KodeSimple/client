@@ -2,7 +2,13 @@ body {
     font-size: 14px; /* Adjust the font size value to your desired size */
   }
   .custom-container {
-    padding: 150px;   /*Adjust the padding values as per your requirement  */
+    padding: 100px;   /*Adjust the padding values as per your requirement  */
     justify-content: center; 
   
+  }
+
+  @media (max-width: 500px) {
+    .custom-container {
+      padding: 50px; 
+    }
   }

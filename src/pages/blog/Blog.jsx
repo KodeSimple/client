@@ -29,7 +29,7 @@ function Blog() {
                             <div className='mb-5 pb-5 '>
 
                               <CardGroup style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                                        <Card style={{ maxWidth: '400px' }}>
+                                        <Card style={{ maxWidth: '750px' }}>
                                         <Card.Img variant="top" src={mobilePos} alt="Mobile Pos" className="index-brochure w-100" fluid/>
                                         <Card.Body>
                                         <Card.Title>Mobile POS: Revolutionizing the Way Businesses Accept Payments</Card.Title>
