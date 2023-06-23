@@ -17,10 +17,10 @@ function About() {
             <div>
                            {/* insert code starts here */}
                           {/* <!--  flex container main --> */}
-                    <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
-                        <div class="pt-5 w-50 bg-body">
+                    <div className="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
+                        <div className="pt-5 w-50 responsive-body">
                                  <h1>About</h1>
-                                 <hr class="hrLines" />
+                                 <hr className="hrLine2" />
 
                                  <p>
                                       Welcome to Kode Simple, a revolutionary "Turn your mobile into POS" business
@@ -48,10 +48,10 @@ function About() {
                                                p-2 flex-row container-fluid about-responses w-50">
                         {/* <!--  flex item 1 starts here--> */}
                         <div className="w-100 bg-body-primary flex-nowrap">     {/* <!--container item set 1 --> */}   
-                          <div class="d-flex flex-column container-fluid  ">
+                          <div className="d-flex flex-column container-fluid  ">
                             <div className="p-2 w-100">
                               <p>
-                              <img src={joelSiroy} alt="Joel Profile" className="index-brochure w-100" fluid />
+                              <img src={joelSiroy} alt="Joel Profile" className="index-brochure w-75" fluid />
                               </p>
                             </div>
                             <div className="p-2  w-100 container-fluid">
@@ -67,7 +67,7 @@ function About() {
                           <div className="d-flex flex-column container-fluid ">
                             <div className="p-2  w-100">
                               <p>
-                              <img src={jinkyCatat} alt="Jinky Profile" className="index-brochure w-100" fluid />
+                              <img src={jinkyCatat} alt="Jinky Profile" className="index-brochure w-75" fluid />
                               </p>
                             </div>
                             <div className="p-2  w-100 container-fluid">
@@ -79,6 +79,20 @@ function About() {
                         </div> 
                         {/* <!--  flex item 2 ends here--> */}
                         {/* <!--  flex item 3 starts here--> */}
+                        <div className="w-100 bg-body-primary flex-nowrap"> {/* <!--container item set 3 --> */}   
+                          <div className="d-flex flex-column container-fluid ">
+                            <div className="p-2  w-100">
+                              <p>
+                              <img src={jinkyCatat} alt="Anthonette Profile" className="index-brochure w-75" fluid />
+                              </p>
+                            </div>
+                            <div className="p-2  w-100 container-fluid">
+                              <p>
+                                <a href="https://github.com/catatjinky">Maria Anthonette Tambal Cañaveral</a>
+                              </p>
+                            </div>
+                          </div>
+                        </div> 
                         
                         {/* <!--  flex item 3 ends here--> */}
                       </div>   
@@ -95,43 +109,4 @@ function About() {
 
 export default About;
 
-    //   modal code insert here
-// import React, { useState } from 'react';
-// // import Button from 'react-bootstrap/Button';    
-// import { Button, Modal } from 'react-bootstrap';
-
-// function About() {
-//   const [showModal, setShowModal] = useState(false);
-
-//   const handleButtonClick = () => {
-//     setShowModal(true);
-//   };
-
-//   const handleCloseModal = () => {
-//     setShowModal(false);
-//   };
-
-//   return (
-//     <div>
-//       <Button variant="primary" onClick={handleButtonClick}>Learn more</Button>
-
-//       <Modal show={showModal} onHide={handleCloseModal}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>About</Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           {/* Add the content for the about page here */}
-//           <p>This is the about page.</p>
-//         </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleCloseModal}>
-//             Close
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </div>
-//   );
-// }
-
-// export default About;
-
+   

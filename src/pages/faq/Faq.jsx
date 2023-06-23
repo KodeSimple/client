@@ -16,15 +16,15 @@ function Faq() {
                {/* <!-- FAQ section starts here --> */}
                <section id="faqhome" className="pt-1"> 
                       <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
-                              <div class="pt-5 w-75 bg-body">
+                              <div class="pt-5 w-50 responsive-body">
                                     <h2>Frequently Asked Questions</h2>
-                                    <hr class="hrLines" />
+                                    <hr className="hrLine2" />
                               </div>
                         </div>
-                        <div className="text-center pt-1">
+                        <div className="text-left pt-1">
                           <div className="p-2">
                             <div className=" faq d-flex d-block w-100 justify-content-center 100"> {/* <!--- flex container main start tag----> */}  
-                              <div className="p-0 w-75 faq-accordion">  {/* <!------firt item start tag------> */}
+                              <div className="p-0 w-50 responsive-body">  {/* <!------firt item start tag------> */}
                                 {/* <!---------accrodion starts here---------> */}
                                 <Accordion>
                                         <Accordion.Item eventKey="0">
@@ -34,7 +34,7 @@ function Faq() {
                                           </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
-                                          <Accordion.Header>Can mobile POS handle large inventories??</Accordion.Header>
+                                          <Accordion.Header>Can mobile POS handle large inventories?</Accordion.Header>
                                           <Accordion.Body>
                                           Yes, mobile POS systems can handle large inventories by providing real-time tracking, efficient search capabilities, and advanced reporting features.
                                           </Accordion.Body>

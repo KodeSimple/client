@@ -191,10 +191,13 @@ function Home() {
                     <section id="about" className="firstLandingPage pt-5 ">
                                 <h1 className="text-center">About us</h1>
                                 {/* short content introduction below here */}
-                                <div className='text-center'>
-                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae  nam omnis numquam magnam harum quos debitis, vitae itaque a!
-                                  </p>
+                                <div className='text-left d-flex justify-content-center w-100'>
+                                   <div className="w-75">
+                                       <p>
+                                       <span className='paragraph-start'>Welcome</span> to Kode Simple, a revolutionary "Turn your mobile into POS" business
+                                           that transforms how companies sell and manage inventory. You can easily convert your mobile device into a portable point-of-sale system with Kode Simple's cutting-edge technology, allowing you to sell your goods whenever and wherever you choose.
+                                       </p>
+                                  </div>
                                 </div>
                                     {/* to view more link below here */}
                                     <div className="p-0 d-flex justify-content-center">
@@ -206,9 +209,9 @@ function Home() {
                    {/* end of about us section */}
                    {/* <!-- FAQ section starts here --> */}
                       <section id="faqhome" className="pt-5"> 
-                        <div className="text-center pt-5">
+                        <div className="text-left pt-5">
                           <div className="p-2">
-                           <h2>Frequently Asked Questions</h2>
+                           <h2 className="text-center">Frequently Asked Questions</h2>
                             <div className=" faq d-flex d-block w-100 justify-content-center 100"> {/* <!--- flex container main start tag----> */}  
                               <div className="p-0 w-75 faq-accordion">  {/* <!------firt item start tag------> */}
                                 {/* <!---------accrodion starts here---------> */}

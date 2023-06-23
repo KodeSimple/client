@@ -37,6 +37,12 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  
+  .hrLine2{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  } 
 
   .contact-container {
     display: flex;
@@ -88,4 +94,9 @@
     padding-top: 20px;
   }
 
+  @media (max-width: 500px) {
+    .responsive-body {
+        width: 90% !important;
+    }
+  }
   

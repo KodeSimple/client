@@ -44,6 +44,10 @@
     }
   }
 
+  .paragraph-start{
+    padding-left: 50px;
+  }
+
 /* testing vercel */
 
 /* .nav-link {

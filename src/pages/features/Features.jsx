@@ -18,10 +18,10 @@ function Features() {
           <div className="featuresPagebackGroundColor"> 
            {/* features content starts here */}
            <section className="features bg-success-subtle">  {/* <!-- starts of features section here*/}
-                                   <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
-                                          <div class=" w-75">
-                                           <h2 class="text-center pt-5">Features</h2>
-                                           <hr class="bs-secondary-color border-2 opacity-50" />
+                                   <div className="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
+                                          <div className=" w-75">
+                                           <h2 className="text-center pt-5">Features</h2>
+                                           <hr className="bs-secondary-color border-2 opacity-50" />
                                           </div>
                                    </div>     
                                    

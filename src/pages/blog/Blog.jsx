@@ -21,9 +21,9 @@ function Blog() {
          <div>
               <section class="blog">
                     <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
-                        <div class="pt-5 w-50 bg-body">
+                        <div class="pt-5 w-50 responsive-body">
                          <h1>Blog</h1>
-                         <hr class="hrLines" />
+                         <hr className="hrLine2" />
                             {/* blogs contents start here */}
 
                             <div className='mb-5 pb-5'>
