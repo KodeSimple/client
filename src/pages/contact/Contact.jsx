@@ -22,17 +22,30 @@ function Contact() {
     event.preventDefault();
     setLoading(true);
 
+    // const emailData = {
+    //   To_email: 'kodesimple57@gmail.com',
+    //   email_contact: event.target.email.value,
+    //   client_phone: event.target.contactNumber.value,
+    //   email_subject: event.target.subject.value,
+    //   from_name: event.target.fullName.value,
+    //   concern_message: event.target.concernMessage.value
+    // };
+
     const emailData = {
-      To_email: 'kodesimple57@gmail.com',
-      email_contact: event.target.email.value,
-      client_phone: event.target.contactNumber.value,
-      email_subject: event.target.subject.value,
-      from_name: event.target.fullName.value,
-      concern_message: event.target.concernMessage.value
+      To_email: 'cardonakie@gmail.com',
+      // email_contact: event.target.emailPublic.value,
+      // client_phone: event.target.phonePublic.value,
+      email_subject:'Inquriy',
+      // // from_name: event.target.firstName.value,
+      // company_name: event.target.companyPublic.value,
+      // industry_name: event.target.industryPublic.value,
+      // annual_revenue: event.target.revenuePublic.value,
+      // name_country: event.target.countryPublic.value,
+      // concern_message: event.target.formMessage.value
     };
 
     emailjs
-      .send('service_dshiyj8', 'template_ojh2eca', emailData, 'y8KcAyItpP1kCao23')
+      .send('service_dshiyj8', 'template_66cq8zg', emailData, 'y8KcAyItpP1kCao23')
       .then((response) => {
         console.log('Email sent successfully!', response);
         setLoading(false);
@@ -48,6 +61,9 @@ function Contact() {
       });
   };
 
+
+
+  
   return(
      <> 
          {/* header section  starts here */}
@@ -61,8 +77,36 @@ function Contact() {
                      <p class="mt-4 mb-4">
                      Fill out the form and a member from our sales team will get back to you within 24 hours, or scroll down for more ways to get in touch.
                      </p>
-Jink
-Jink Cardona
+                      {/* <hr class="hrLines" /> */}
+          {/* content starts here */}
+
+          {/* <div className="contact-container">
+            
+
+          <Form className="contact-item w-75">
+                <Form.Group controlId="formName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter your name" />
+                </Form.Group>
+
+                <Form.Group controlId="formEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter your email" />
+                </Form.Group>
+
+                <Form.Group controlId="formMessage">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
+                </Form.Group>
+
+                <Button p- variant="primary" type="submit">
+                  Submit
+                </Button>
+              </Form>
+              
+              
+              </div> */}
+
 <Container>
       <Row className="container-row">
         {/* First Column */}
@@ -82,7 +126,7 @@ Jink Cardona
           <iframe
             title="Map"
             width="100%"
-            height="300"
+            height="200"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
@@ -113,72 +157,72 @@ Jink Cardona
               <Col sm={6}>
                 <Form.Group controlId="firstName">
                   <Form.Label>First Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter first name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control name="firstName" type="text" placeholder="Enter first name" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
               <Col sm={6}>
                 <Form.Group controlId="lastName">
                   <Form.Label>Last Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter last name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control name="lastName" type="text" placeholder="Enter last name" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
             </Row>
 
             <Row>
             <Col sm={6}>
-            <Form.Group controlId="email">
+            <Form.Group controlId="emailPublic">
               <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" style={{ marginBottom: '10px' }}/>
+              <Form.Control name="emailPublic" type="email" placeholder="Enter email" style={{ marginBottom: '10px' }}/>
             </Form.Group>
             </Col>
 
             <Col sm={6}>
-            <Form.Group controlId="phone">
+            <Form.Group controlId="phonePublic">
               <Form.Label>Phone</Form.Label>
-              <Form.Control type="text" placeholder="Enter phone number" style={{ marginBottom: '10px' }}/>
+              <Form.Control name="phonePublic" type="text" placeholder="Enter phone number" style={{ marginBottom: '10px' }}/>
             </Form.Group>
             </Col>
             </Row>
 
             <Row>
               <Col sm={6}>
-                <Form.Group controlId="company">
+                <Form.Group controlId="companyPublic">
                   <Form.Label>Company Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter company name" style={{ marginBottom: '10px' }}/>
+                  <Form.Control name="companyPublic" type="text" placeholder="Enter company name" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
              </Col>
 
               <Col sm={6}>
-                <Form.Group controlId="industry">
+                <Form.Group controlId="industryPublic">
                   <Form.Label>Industry</Form.Label>
-                  <Form.Control type="text" placeholder="Enter industry" style={{ marginBottom: '10px' }}/>
+                  <Form.Control name="industryPublic" ype="text" placeholder="Enter industry" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
             </Row>
 
             <Row>
               <Col sm={6}>
-                <Form.Group controlId="revenue">
+                <Form.Group controlId="revenuePublic">
                   <Form.Label>Annual Revenue</Form.Label>
-                  <Form.Control type="text" placeholder="Select Revenue" style={{ marginBottom: '10px' }}/>
+                  <Form.Control name="revenuePublic" type="text" placeholder="Select Revenue" style={{ marginBottom: '10px' }}/>
                 </Form.Group>
               </Col>
 
               <Col sm={6}>
-                <Form.Group controlId="country">
+                <Form.Group controlId="countryPublic">
                   <Form.Label>Country</Form.Label>
-                  <Form.Control type="text" placeholder="Enter country" style={{ marginBottom: '25px' }}/>
+                  <Form.Control name="countryPublic" type="text" placeholder="Enter country" style={{ marginBottom: '25px' }}/>
                 </Form.Group>
               </Col>
             </Row>
 
-            <Form.Group controlId="newsletter">
+            {/* <Form.Group controlId="newsletter">
               <Form.Check type="checkbox" label="Yes, I would like to receive news and offers from KodeSimple via email" style={{ marginBottom: '10px' }}/>
             </Form.Group>
 
             <Form.Group controlId="phoneCall">
               <Form.Check type="checkbox" label="Yes, I agree to receive phone calls from KodeSimple" style={{ marginBottom: '15px' }}/>
-            </Form.Group>
+            </Form.Group> */}
 
             <Form.Group controlId="formMessage">
                   <Form.Label>Message</Form.Label>
