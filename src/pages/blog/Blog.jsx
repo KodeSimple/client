@@ -29,7 +29,7 @@ function Blog() {
                             <div className='mb-5 pb-5 '>
 
                               <CardGroup style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                                        <Card>
+                                        <Card style={{ maxWidth: '400px' }}>
                                         <Card.Img variant="top" src={mobilePos} alt="Mobile Pos" className="index-brochure w-100" fluid/>
                                         <Card.Body>
                                         <Card.Title>Mobile POS: Revolutionizing the Way Businesses Accept Payments</Card.Title>
@@ -46,10 +46,10 @@ function Blog() {
                                         </Navbar> */}
                                         </Card>
 
-                                        <Card>
+                                        {/* <Card> */}
                                           
                                         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
-                                        <Card.Body>
+                                        {/* <Card.Body>
                                         <Card.Title>Inventory Management on Mobile POS</Card.Title>
                                         <Card.Text>
                                         Successful inventory management is essential to the growth of firms in a variety of industries. It entails monitoring, planning, and managing the flow of goods, making sure that stock levels are ideal, and expediting the order fulfillment procedures.{' '}
@@ -58,7 +58,7 @@ function Blog() {
                                         <div className="p-0 d-flex justify-content-center">
                                            <a className="hrefLink" href="/mobile-pos" onClick={Mobilepos}>Learn more</a>
                                         </div>
-                                        </Card>
+                                        </Card> */}
 
                               </CardGroup>
 

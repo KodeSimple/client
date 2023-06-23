@@ -19,7 +19,7 @@ function About() {
                           {/* <!--  flex container main --> */}
                     <div className="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-3 flex-nowrap container-fluid">
                         <div className="pt-5 w-50 responsive-body">
-                                 <h1>About</h1>
+                                 <h1>About Us</h1>
                                  <hr className="hrLine2" />
 
                                  <p>
@@ -43,11 +43,12 @@ function About() {
                                     </p>
                         </div>
                     </div>
-                             {/* about content starts here  */}
-                      <div className="d-flex d-block f justify-content-center
-                                               p-2 flex-row container-fluid about-responses w-50">
+                             {/* about content ends here  */}
+                      <div className="d-flex  d-block f justify-content-center
+                        p-2 flex-row container-fluid about-responses w-50">
                         {/* <!--  flex item 1 starts here--> */}
-                        <div className="w-100 bg-body-primary flex-nowrap">     {/* <!--container item set 1 --> */}   
+                        <div className="w-100 bg-body-primary flex-nowrap">     
+                        {/* <!--container item set 1 --> */}   
                           <div className="d-flex flex-column container-fluid  ">
                             <div className="p-2 w-100">
                               <p>
@@ -61,6 +62,8 @@ function About() {
                             </div>
                           </div>
                         </div>
+
+
                         {/* <!--  flex item 1 ends here--> */}
                         {/* <!--  flex item 2 stars here--> */}
                         <div className="w-100 bg-body-primary flex-nowrap"> {/* <!--container item set 2 --> */}   
@@ -79,8 +82,10 @@ function About() {
                         </div> 
                         {/* <!--  flex item 2 ends here--> */}
                         {/* <!--  flex item 3 starts here--> */}
-                        <div className="w-100 bg-body-primary flex-nowrap"> {/* <!--container item set 3 --> */}   
-                          <div className="d-flex flex-column container-fluid ">
+                        {/* <div className="w-100 bg-body-primary flex-nowrap">  */}
+                        
+                        {/* <!--container item set 3 --> */}   
+                          {/* <div className="d-flex flex-column container-fluid ">
                             <div className="p-2  w-100">
                               <p>
                               <img src={jinkyCatat} alt="Anthonette Profile" className="index-brochure w-75" fluid />
@@ -91,8 +96,8 @@ function About() {
                                 <a href="https://github.com/catatjinky">Maria Anthonette Tambal Cañaveral</a>
                               </p>
                             </div>
-                          </div>
-                        </div> 
+                          </div> */}
+                        {/* </div>  */}
                         
                         {/* <!--  flex item 3 ends here--> */}
                       </div>   

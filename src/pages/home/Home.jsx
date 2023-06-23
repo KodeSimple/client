@@ -15,6 +15,7 @@ import growthArrow from '../../components/resources/hand-holding-growth-arrow-wi
 import responsive from '../../components/resources/responsive.png';
 
 
+
 function Home() {
  
           
@@ -39,7 +40,7 @@ function Home() {
                 <section className="features bg-success-subtle">  {/* <!-- starts of features section here*/}
                           <div class="d-flex flex-row justify-content-center pt-5 flex-nowrap container-fluid">
                                  <div class=" w-75">
-                                  <h2 class="text-center pt-5">Features</h2>
+                                  <h1 class="text-center pt-5">KodeSimple Features</h1>
                                   <hr class="bs-secondary-color border-2 opacity-50" />
                                  </div>
                           </div>     
@@ -182,20 +183,29 @@ function Home() {
 
                             {/* features section ends here */}
                            {/* <!-- starts of pricing section --> */}        
-                   <section id="pricing" className=" bg-info-subtle">
+                   {/* <section id="pricing" className=" bg-info-subtle">
                           <img src={pricing} alt="POS brochure" className="index-brochure w-100" fluid />
-                   </section>
+                   </section> */}
+                        <section id="pricing" className="bg-info-subtle">
+                          <div className="pricing-container">
+                            <img src={pricing} alt="POS brochure" className="index-brochure" />
+                            <div className="pricing-text">
+                              <h2>Our Pricing Plans</h2>
+                              <p>
+                                KodeSimple mobile POS is a cutting-edge point-of-sale (POS) system designed for small and medium-sized businesses. It provides a convenient and efficient way for merchants to manage their sales and transactions using their mobile devices.</p>
+                            </div>
+                          </div>
+                        </section>
              </div> {/* background end tag */}
                    {/* <!-- End of pricing section here --> */}
                                 {/* <!-- About us section starts here --> */}
                     <section id="about" className="firstLandingPage pt-5 ">
-                                <h1 className="text-center">About us</h1>
+                                <h2 className="text-center">About us</h2>
                                 {/* short content introduction below here */}
                                 <div className='text-left d-flex justify-content-center w-100'>
                                    <div className="w-75">
                                        <p>
-                                       <span className='paragraph-start'>Welcome</span> to KodeSimple, a revolutionary "Turn your mobile into POS" business
-                                           that transforms how companies sell and manage inventory. You can easily convert your mobile device into a portable point-of-sale system with Kode Simple's cutting-edge technology, allowing you to sell your goods whenever and wherever you choose.
+                                       <span className='paragraph-start'>KodeSimple</span> is a leading provider of mobile Point of Sale (POS) solutions. Our innovative platform empowers businesses of all sizes to transform their smartphones or tablets into powerful sales tools. With KodeSimple, you can easily accept payments, track inventory, manage customer data, and generate real-time sales reports, all from the convenience of your mobile device.
                                        </p>
                                   </div>
                                 </div>
@@ -219,49 +229,25 @@ function Home() {
                                         <Accordion.Item eventKey="0">
                                           <Accordion.Header> Is this system is free?</Accordion.Header>
                                           <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.
+                                          No, the Kodesimple Mobile POS system is not available for free. It is a commercial product that requires a subscription or payment to access its features and functionality. The pricing and subscription plans may vary, so it's recommended to visit the official Kodesimple website or contact our customer support for detailed information regarding the cost and pricing structure of their Mobile POS system. 
                                           </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
                                           <Accordion.Header>How many users are the limit per email?</Accordion.Header>
                                           <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.
+                                          The user limit per email in the Kodesimple Mobile POS system may vary depending on the specific subscription or pricing plan you choose. To get accurate information about the user limit, it is best to visit our official Kodesimple website. We will be able to provide you with detailed information.
                                           </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="2">
                                           <Accordion.Header> Are invetory and sales data are availbale to download?</Accordion.Header>
                                           <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.
+                                          Yes, the Kodesimple Mobile POS system typically provides the functionality to download inventory and sales data. This feature allows users to export data related to their inventory and sales transactions in a downloadable format. By having access to this data, you can analyze and manage your inventory levels, track sales performance, and generate reports for further analysis or integration with other systems.
                                           </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="3">
                                           <Accordion.Header> Is there a user manual?</Accordion.Header>
                                           <Accordion.Body>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                            culpa qui officia deserunt mollit anim id est laborum.
+                                          Yes, typically the Kodesimple Mobile POS system provides a user manual or documentation to assist users in understanding and using the system effectively. The user manual is designed to provide step-by-step instructions, guidance, and information on various features, settings, and functionalities of the system.
                                           </Accordion.Body>
                                         </Accordion.Item>
                                       </Accordion>

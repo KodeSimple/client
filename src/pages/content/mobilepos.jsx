@@ -3,6 +3,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import NavBarComp from '../../components/header/NavBarComp';
 import Footer from '../../components/footer/Footer';
 import mobileposBlog from '../../components/resources/mobile-pos-blog.jpg';
+import '../../pages/content/mobilepos.css';
 
 function Mobilepos() {
   return (
@@ -12,17 +13,19 @@ function Mobilepos() {
     </div>
     <main>
 
-    <Container className='px-3 pt-3 pb-3'>
+    <Container className='custom-container'>
       <Row>
-        <Col >
-          <Image src={mobileposBlog} alt="Mobile Pos Blog" className="index-brochure w-50" fluid/>
-          <h1>Mobile POS: Revolutionizing the Way Businesses Accept Payments</h1>
+      <div className="d-flex justify-content-center">
+        <Col style={{ paddingBottom: '20px', paddingTop: '0px' }}>
+          {/* <Image src={mobileposBlog} alt="Mobile Pos Blog" className="index-brochure w-100" fluid/> */}
+          <h1 style={{ textAlign: 'center' }}>Mobile POS: Revolutionizing the Way Businesses Accept Payments</h1>
         </Col>
+        </div>
       </Row>
+
+      <div style={{ textAlign: 'justify' }}>
       <Row>
         <Col>
-          
-          <h2>What is mobile POS and how does it operate?</h2>
           <p>
             Mobile POS refers to a system that enables businesses to process transactions using a mobile device, such as a smartphone or tablet, instead of a traditional cash register or stationary point of sale terminal. With a Mobile POS solution, businesses can accept various forms of payment, including credit and debit cards, contactless payments, and mobile wallet options. The device acts as a cash register, allowing businesses to ring up sales, generate receipts, and manage inventory all in one place.
           </p>
@@ -30,11 +33,11 @@ function Mobilepos() {
       </Row>
       <Row>
         <Col>
-          <h2>Benefits of Mobile POS Systems</h2>
+          <h2 style={{ paddingBottom: '20px' }}>Benefits of Mobile POS Systems</h2>
           <p>
             Mobile POS systems offer numerous advantages to businesses of all sizes. Here are some key benefits:
           </p>
-          <ol>
+          <ol style={{ paddingBottom: '20px' }}>
             <li>Increased Flexibility: With a Mobile POS system, businesses can accept payments anywhere, whether they are on-site, at a trade show, or conducting sales remotely. This flexibility allows businesses to cater to their customers' needs and enhance the overall shopping experience.</li>
             <li>Enhanced Efficiency: Traditional cash registers can be bulky and limit mobility within a store. With the help of mobile POS systems, businesses can serve consumers directly on the sales floor, cutting down on lines and boosting productivity.</li>
             <li>Reduced Costs: Compared to traditional point-of-sale terminals, investing in a mobile POS system can be more affordable. Mobile devices are typically less expensive and more adaptable, giving businesses a cheaper option for receiving payments.</li>
@@ -45,7 +48,9 @@ function Mobilepos() {
       </Row>
       <Row>
         <Col>
-        <Image src="h2_image.jpg" fluid alt="Mobile POS" />
+          <div style={{ display: 'flex', justifyContent: 'center', paddingBottom: '20px' }}>
+        <Image src={mobileposBlog} alt="Mobile Pos Blog" className="index-brochure" style={{ width: '50%' }} fluid/>
+        </div>
           <h2>Using Mobile Point-of-Sale in Your Business</h2>
           <p>
             Planning and thought must go into implementing a Mobile POS system. The following are the crucial steps in the implementation process:
@@ -58,6 +63,7 @@ function Mobilepos() {
           </ol>
         </Col>
       </Row>
+      </div>
     </Container>
     </main>
     <div>

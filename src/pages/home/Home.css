@@ -91,3 +91,28 @@
 .nav-link:hover {
   text-decoration: none !important;
 } */
+
+.pricing-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-brochure {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.pricing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}

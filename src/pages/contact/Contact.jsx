@@ -100,7 +100,7 @@ function Contact() {
 
           {/* <p>Phone: +1234567890</p> */}
           <div className="image-contact">
-          <a href="https://www.facebook.com">
+          <a href="https://www.facebook.com/profile.php?id=100092405686394">
             <img src={AiFillFacebook} size={30} height="50px" alt="fb icon" fluid/>
           </a>
 
