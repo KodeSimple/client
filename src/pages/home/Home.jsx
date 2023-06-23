@@ -194,7 +194,7 @@ function Home() {
                                 <div className='text-left d-flex justify-content-center w-100'>
                                    <div className="w-75">
                                        <p>
-                                       <span className='paragraph-start'>Welcome</span> to Kode Simple, a revolutionary "Turn your mobile into POS" business
+                                       <span className='paragraph-start'>Welcome</span> to KodeSimple, a revolutionary "Turn your mobile into POS" business
                                            that transforms how companies sell and manage inventory. You can easily convert your mobile device into a portable point-of-sale system with Kode Simple's cutting-edge technology, allowing you to sell your goods whenever and wherever you choose.
                                        </p>
                                   </div>

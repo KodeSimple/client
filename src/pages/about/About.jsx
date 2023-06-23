@@ -23,14 +23,14 @@ function About() {
                                  <hr className="hrLine2" />
 
                                  <p>
-                                      Welcome to Kode Simple, a revolutionary "Turn your mobile into POS" business
+                                      Welcome to KodeSimple, a revolutionary "Turn your mobile into POS" business
                                       that transforms how companies sell and manage inventory. You can easily convert your mobile device into a portable point-of-sale system with Kode Simple's cutting-edge technology, allowing you to sell your goods whenever and wherever you choose.
                                     </p>
                                     <p>
                                       Embrace the convenience of selling while you're on the road and wave goodbye to the inconvenience of large cash registers.
                                     </p>
                                     <p>
-                                      The powerful inventory management system that Kode Simple offers is at the core of its approach to streamlining your company's operations. You can easily track and manage your inventory on your mobile device with a few touches, ensuring that you always have the proper products in stock.
+                                      The powerful inventory management system that KodeSimple offers is at the core of its approach to streamlining your company's operations. You can easily track and manage your inventory on your mobile device with a few touches, ensuring that you always have the proper products in stock.
                                     </p>
                                     <p>
                                       Never miss a sales opportunity again by maintaining control over your supply chain. We are here to assist you in making the greatest choices for your company as fast and effectively as we can, and that is why we are here.
