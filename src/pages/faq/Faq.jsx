@@ -16,7 +16,7 @@ function Faq() {
                {/* <!-- FAQ section starts here --> */}
                <section id="faqhome" className="pt-1"> 
                       <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
-                              <div class="pt-5 w-50 responsive-body">
+                              <div class="pt-3 w-50 responsive-body">
                                     <h2>Frequently Asked Questions</h2>
                                     <hr className="hrLine2" />
                               </div>

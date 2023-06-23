@@ -17,7 +17,7 @@ function About() {
             <div>
                            {/* insert code starts here */}
                           {/* <!--  flex container main --> */}
-                    <div className="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
+                    <div className="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-3 flex-nowrap container-fluid">
                         <div className="pt-5 w-50 responsive-body">
                                  <h1>About</h1>
                                  <hr className="hrLine2" />

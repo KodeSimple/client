@@ -6,8 +6,8 @@ import CardGroup from 'react-bootstrap/CardGroup';
 // import Button from 'react-bootstrap/Button';
 import Mobilepos from '../content/mobilepos';
 import mobilePos from '../../components/resources/mobile-pos.png';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 
 
 function Blog() {
@@ -20,13 +20,13 @@ function Blog() {
       <main>
          <div>
               <section class="blog">
-                    <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-5 flex-nowrap container-fluid">
-                        <div class="pt-5 w-50 responsive-body">
+                    <div class="d-flex flex-row justify-content-center align-self-center bg-body-emphasis pt-3 flex-nowrap container-fluid">
+                        <div class="pt-5 w-50 responsive-body text-left">
                          <h1>Blog</h1>
                          <hr className="hrLine2" />
                             {/* blogs contents start here */}
 
-                            <div className='mb-5 pb-5'>
+                            <div className='mb-5 pb-5 '>
 
                               <CardGroup style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                         <Card>
@@ -37,17 +37,18 @@ function Blog() {
                                         Given the fast-paced environment we live in today, where smartphones have become an essential part of our everyday lives, it is not unexpected that businesses are using mobile technology to expedite their procedures.
                                         </Card.Text>
                                         </Card.Body>
-                                        <Navbar>
-                                        <Nav>
+                                        {/* <Navbar>
+                                        <Nav> */}
                                         <div className="p-0 d-flex justify-content-center">
-                                           <a className="hrefLink" href="/mobile-pos" onClick={Mobilepos}>Learn more</a>
+                                           <a className="hrefLink " href="/mobile-pos" onClick={Mobilepos}>Learn more</a>
                                         </div>
-                                        </Nav>
-                                        </Navbar>
+                                        {/* </Nav>
+                                        </Navbar> */}
                                         </Card>
 
                                         <Card>
-                                        <Card.Img variant="top" src="holder.js/100px160" />
+                                          
+                                        {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                                         <Card.Body>
                                         <Card.Title>Inventory Management on Mobile POS</Card.Title>
                                         <Card.Text>
@@ -58,8 +59,6 @@ function Blog() {
                                            <a className="hrefLink" href="/mobile-pos" onClick={Mobilepos}>Learn more</a>
                                         </div>
                                         </Card>
-
-                                        
 
                               </CardGroup>
 

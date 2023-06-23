@@ -12,7 +12,7 @@ function Mobilepos() {
     </div>
     <main>
 
-    <Container>
+    <Container className='px-3 pt-3 pb-3'>
       <Row>
         <Col >
           <Image src={mobileposBlog} alt="Mobile Pos Blog" className="index-brochure w-50" fluid/>

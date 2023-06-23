@@ -71,7 +71,7 @@ function Contact() {
          {/* header section ends here */}
      <main>   
          <secction className="contact">
-              <div className="d-flex flex-row justify-content-center align-self-center bg-gradient pt-5 flex-nowrap container-fluid">
+              <div className="d-flex flex-row justify-content-center align-self-center bg-gradient pt-3 flex-nowrap container-fluid">
                 <div className="pt-5 w-50 responsive-body">
                      <h1>Contact Us</h1>
                      <hr className="hrLine2" />
