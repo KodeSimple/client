@@ -51,7 +51,7 @@ function SaleReceipt({ paymentSuccessful }) {
               <p>Sales ID: {salesReceiptData.salesList[0].salesId}</p>
               <p>Reference No: {salesReceiptData.salesList[0].referenceNo}</p>
               <p>Date: {new Date(salesReceiptData.salesList[0].date).toLocaleDateString()}</p>
-              <Table striped bordered hover>
+              <Table responsive="sm">
                 <thead>
                   <tr>
                     <th>Serial No</th>
