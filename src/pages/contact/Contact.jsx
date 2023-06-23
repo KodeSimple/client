@@ -110,7 +110,7 @@ function Contact() {
           </p>
 
           <div>
-          <Badge variant="secondary">📞</Badge> +1234567890
+          <Badge variant="secondary">📞</Badge> +639 56947 7780
           </div>
 
           <div className="iframe-contact">
