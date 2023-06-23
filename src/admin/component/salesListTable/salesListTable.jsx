@@ -145,7 +145,7 @@ function SalesTableList() {
             </div>
             {selectedItem && (
               <>
-                <Table striped bordered hover size="sm">
+                <Table striped bordered hover size="lg">
                   <thead>
                     <tr>
                       <th>Serial No</th>
