@@ -74,7 +74,7 @@ function SaleReceipt({ paymentSuccessful }) {
                     </tr>
                   ))}
                   <tr>
-                    <td colSpan="5" className="text-end">
+                    <td colSpan="4" className="text-end">
                       Total:
                     </td>
                     <td>{parseFloat(salesReceiptData.salesList[0].allTotalPrice).toFixed(2)}</td>
