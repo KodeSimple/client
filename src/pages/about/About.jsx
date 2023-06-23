@@ -4,8 +4,8 @@ import React from 'react'
 // import RenzProfile from '../../components/resources/picture.jpg'
 import NavBarComp from '../../components/header/NavBarComp'
 import Footer from '../../components/footer/Footer'
-import jinkyCatat from '../../components/resources/jinky-catat.jpg';
-import joelSiroy from '../../components/resources/joel-siroy.jpg';
+import jinkyCatat from '../../components/resources/jinky-catat.png';
+import joelSiroy from '../../components/resources/joel-siroy.png';
 
 function About() {
   return (
