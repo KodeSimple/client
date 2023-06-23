@@ -53,16 +53,30 @@ function AddItemForm() {
     sellPrice: yup.number().required(errorField),
     profit: yup.number().required(errorField),
   });
+///////////////insert code/////
+const handleSubmit = async (values, { resetForm }) => {
+  setSubmitting(true);
+  setSubmissionError(false);
+  setSubmissionSuccess(false);
 
-  const handleSubmit = async (values, { resetForm }) => {
-    setSubmitting(true);
-    setSubmissionError(false);
-    setSubmissionSuccess(false);
-
-    try {
-      const currentDate = new Date();
-      const date = currentDate.toLocaleDateString('en-US');
-      const response = await apiService.post('/users/addproduct', {
+  try {
+    const currentDate = new Date();
+    const date = currentDate.toLocaleDateString('en-US');
+    let response = await apiService.post('/users/addproduct', {
+      userId: loggedInUser,
+      entryDate: date,
+      serialNo: values.serialNo,
+      category: values.category,
+      itemDescription: values.itemDescription,
+      qty: values.qty,
+      buyPrice: values.buyPrice,
+      sellPrice: values.sellPrice,
+      profit: values.profit,
+    });
+    console.log(response);
+    if (!response.data) {
+      //// Retry the POST request
+      response = await apiService.post('/users/addproduct', {
         userId: loggedInUser,
         entryDate: date,
         serialNo: values.serialNo,
@@ -73,24 +87,63 @@ function AddItemForm() {
         sellPrice: values.sellPrice,
         profit: values.profit,
       });
-
-      if (response.data.message === 'Item added successfully') {
-        setSubmissionSuccess(true);
-        resetForm();
-
-        setTimeout(() => {
-          setSubmissionSuccess(false);
-        }, 3000);
-      } else {
-        setSubmissionError(true);
-      }
-    } catch (error) {
-      console.log(error);
-      setSubmissionError(true);
-    } finally {
-      setSubmitting(false);
     }
-  };
+         console.log(response);
+    if (response.data && response.data.message === 'Item added successfully') {
+      setSubmissionSuccess(true);
+      resetForm();
+
+      setTimeout(() => {
+        setSubmissionSuccess(false);
+      }, 3000);
+    } else {
+      setSubmissionError(true);
+    }
+  } catch (error) {
+    console.log(error);
+    setSubmissionError(true);
+  } finally {
+    setSubmitting(false);
+  }
+};
+
+  // const handleSubmit = async (values, { resetForm }) => {
+  //   setSubmitting(true);
+  //   setSubmissionError(false);
+  //   setSubmissionSuccess(false);
+
+  //   try {
+  //     const currentDate = new Date();
+  //     const date = currentDate.toLocaleDateString('en-US');
+  //     const response = await apiService.post('/users/addproduct', {
+  //       userId: loggedInUser,
+  //       entryDate: date,
+  //       serialNo: values.serialNo,
+  //       category: values.category,
+  //       itemDescription: values.itemDescription,
+  //       qty: values.qty,
+  //       buyPrice: values.buyPrice,
+  //       sellPrice: values.sellPrice,
+  //       profit: values.profit,
+  //     });
+
+  //     if (response.data.message === 'Item added successfully') {
+  //       setSubmissionSuccess(true);
+  //       resetForm();
+
+  //       setTimeout(() => {
+  //         setSubmissionSuccess(false);
+  //       }, 3000);
+  //     } else {
+  //       setSubmissionError(true);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     setSubmissionError(true);
+  //   } finally {
+  //     setSubmitting(false);
+  //   }
+  // };
 
   return (
     <Formik
